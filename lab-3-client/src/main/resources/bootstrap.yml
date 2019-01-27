@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: lab-3-client
+  profiles:
+    active: northamerica
+  cloud:
+    config:
+      uri: http://localhost:8001
+      fail-fast: true
+
