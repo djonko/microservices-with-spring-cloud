@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: lab-5-sentence
+  profiles:
+    active: sentence
+  cloud:
+    config:
+      uri: http://localhost:4045
+      fail-fast: true

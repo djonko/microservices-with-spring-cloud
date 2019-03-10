@@ -1,4 +1,4 @@
-package microservice.springcloug.lab3;
+package microservice.springcloug.lab4configserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

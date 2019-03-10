@@ -1,3 +1,5 @@
 spring:
-  application:
-    name: lab-4-subject
+  cloud:
+    config:
+      uri: http://localhost:4045
+      fail-fast: true

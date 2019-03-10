@@ -2,14 +2,23 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.microservices.parent</groupId>
     <artifactId>demo-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
 
     <name>demo-parent</name>
     <description>Demo project for Spring Boot</description>
+    <modules>
+        <module>lab-4-eureka-server</module>
+        <module>lab-4-adjective</module>
+        <module>lab-4-article</module>
+        <module>lab-4-noun</module>
+        <module>lab-4-verb</module>
+        <module>lab-4-subject</module>
+        <module>lab-4-sentence</module>
+    </modules>
 
 
 

@@ -1,4 +1,4 @@
-package microservice.springcloug.lab3;
+package microservice.springcloug.lab4configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
