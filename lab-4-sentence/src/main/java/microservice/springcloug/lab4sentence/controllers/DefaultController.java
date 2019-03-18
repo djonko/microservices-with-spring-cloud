@@ -12,31 +12,31 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-public class DefaultController {
+public class DefaultController
+{
 
     @Autowired
     private DiscoveryClient client;
 
     @GetMapping("/sentence")
-    public @ResponseBody String getSentence()
+    public @ResponseBody
+    String getSentence()
     {
         return
-                getWorld("lab-4-subject")+ " "+
-                getWorld("lab-4-verb")+ " "+
-                getWorld("lab-4-article")+ " "+
-                getWorld("lab-4-adjective")+ " "+
-                getWorld("lab-4-noun")+ " . ";
+                getWorld("lab-4-subject") + " " +
+                        getWorld("lab-4-verb") + " " +
+                        getWorld("lab-4-article") + " " +
+                        getWorld("lab-4-adjective") + " " +
+                        getWorld("lab-4-noun") + " . ";
     }
 
     public String getWorld(String service)
     {
         String value = null;
         List<ServiceInstance> list = client.getInstances(service);
-        if(list!=null && list.size() > 0 )
-        {
+        if (list != null && list.size() > 0) {
             URI uri = list.get(0).getUri();
-            if(uri!= null)
-            {
+            if (uri != null) {
                 RestTemplate restTemplate = new RestTemplate();
                 value = restTemplate.getForObject(uri, String.class);
             }

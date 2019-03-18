@@ -8,12 +8,13 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
 @EnableConfigServer
-public class Lab3Application {
+public class Lab3Application
+{
 
-	public static void main(String[] args)
+    public static void main(String[] args)
     {
-		SpringApplication.run(Lab3Application.class, args);
-	}
+        SpringApplication.run(Lab3Application.class, args);
+    }
 
 
 }

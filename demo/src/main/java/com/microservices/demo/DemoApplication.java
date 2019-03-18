@@ -14,23 +14,26 @@ import java.util.HashSet;
 import java.util.Set;
 
 @SpringBootApplication
-public class DemoApplication extends SpringBootServletInitializer {
+public class DemoApplication extends SpringBootServletInitializer
+{
 
     @Autowired
     TeamDao teamDao;
 
     /**
      * User wwhen I run as a jar
+     *
      * @param args
      */
-	public static void main(String[] args)
-	{
+    public static void main(String[] args)
+    {
 
-		SpringApplication.run(DemoApplication.class, args);
-	}
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
     /**
      * User when I run as a War
+     *
      * @param builder
      * @return
      */
@@ -42,7 +45,8 @@ public class DemoApplication extends SpringBootServletInitializer {
 
 
     @PostConstruct
-    public void init() {
+    public void init()
+    {
         Set<Player> players = new HashSet<>();
         players.add(new Player("Charly Brown", "pitcher"));
         players.add(new Player("Snoopy", "shortstop"));

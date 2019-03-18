@@ -6,11 +6,13 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class Lab4AdjectiveApplication {
+public class Lab4AdjectiveApplication
+{
 
-	public static void main(String[] args) {
-		SpringApplication.run(Lab4AdjectiveApplication.class, args);
-	}
+    public static void main(String[] args)
+    {
+        SpringApplication.run(Lab4AdjectiveApplication.class, args);
+    }
 
 }
 

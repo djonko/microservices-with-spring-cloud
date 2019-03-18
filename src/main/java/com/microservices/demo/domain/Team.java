@@ -6,7 +6,8 @@ import java.util.Set;
 
 @XmlRootElement
 @Entity
-public class Team {
+public class Team
+{
 
     private Long id;
     private String name;
@@ -15,56 +16,68 @@ public class Team {
 
     private Set<Player> players;
 
-    public Team(String location, String name , Set<Player> players) {
+    public Team(String location, String name, Set<Player> players)
+    {
         this.name = name;
         this.location = location;
         this.players = players;
     }
 
-    public Team() {
+    public Team()
+    {
     }
 
     @Id
     @GeneratedValue
-    public Long getId() {
+    public Long getId()
+    {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id)
+    {
         this.id = id;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getLocation() {
+    public String getLocation()
+    {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(String location)
+    {
         this.location = location;
     }
 
-    public String getMascotte() {
+    public String getMascotte()
+    {
         return mascotte;
     }
 
-    public void setMascotte(String mascotte) {
+    public void setMascotte(String mascotte)
+    {
         this.mascotte = mascotte;
     }
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "teamId")
-    public Set<Player> getPlayers() {
+    public Set<Player> getPlayers()
+    {
         return players;
     }
 
-    public void setPlayers(Set<Player> players) {
+    public void setPlayers(Set<Player> players)
+    {
         this.players = players;
     }
 }

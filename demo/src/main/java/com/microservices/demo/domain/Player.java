@@ -12,38 +12,46 @@ public class Player
     private String position;
     private Long id;
 
-    public Player(String name, String position) {
+    public Player(String name, String position)
+    {
         this.name = name;
         this.position = position;
     }
 
-    public Player() {
+    public Player()
+    {
 
     }
 
     @Id
     @GeneratedValue
-    public Long getId() {
+    public Long getId()
+    {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id)
+    {
         this.id = id;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getPosition() {
+    public String getPosition()
+    {
         return position;
     }
 
-    public void setPosition(String position) {
+    public void setPosition(String position)
+    {
         this.position = position;
     }
 }

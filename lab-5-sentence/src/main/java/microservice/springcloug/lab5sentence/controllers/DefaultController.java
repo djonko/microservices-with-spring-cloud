@@ -12,21 +12,23 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-public class DefaultController {
+public class DefaultController
+{
 
+    private static final String HTTP = "http://";
     @Autowired
     private RestTemplate restTemplate;
-    private static final String HTTP = "http://";
 
     @GetMapping("/sentence")
-    public @ResponseBody String getSentence()
+    public @ResponseBody
+    String getSentence()
     {
         return
-                getWorld("subject")+ " "+
-                getWorld("verb")+ " "+
-                getWorld("article")+ " "+
-                getWorld("adjective")+ " "+
-                getWorld("noun")+ " . ";
+                getWorld("subject") + " " +
+                        getWorld("verb") + " " +
+                        getWorld("article") + " " +
+                        getWorld("adjective") + " " +
+                        getWorld("noun") + " . ";
     }
 
     public String getWorld(String service)

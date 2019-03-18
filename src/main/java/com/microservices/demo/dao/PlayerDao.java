@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import java.util.List;
 
 
-@RestResource(path = "players", rel="players")
+@RestResource(path = "players", rel = "players")
 public interface PlayerDao extends CrudRepository<Player, Long>
 {
 

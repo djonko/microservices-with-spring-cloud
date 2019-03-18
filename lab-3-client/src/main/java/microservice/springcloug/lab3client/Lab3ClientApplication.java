@@ -6,17 +6,19 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class Lab3ClientApplication extends SpringBootServletInitializer {
+public class Lab3ClientApplication extends SpringBootServletInitializer
+{
 
-	public static void main(String[] args)
-	{
-		SpringApplication.run(Lab3ClientApplication.class, args);
-	}
+    public static void main(String[] args)
+    {
+        SpringApplication.run(Lab3ClientApplication.class, args);
+    }
 
-	@Override
-	public SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(Lab3ClientApplication.class);
-	}
+    @Override
+    public SpringApplicationBuilder configure(SpringApplicationBuilder builder)
+    {
+        return builder.sources(Lab3ClientApplication.class);
+    }
 
 }
 
