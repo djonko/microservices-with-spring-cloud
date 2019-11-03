@@ -6,12 +6,12 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class Lab5ServerWordApplication
+public class Lab6ServerWordApplication
 {
 
     public static void main(String[] args)
     {
-        SpringApplication.run(Lab5ServerWordApplication.class, args);
+        SpringApplication.run(Lab6ServerWordApplication.class, args);
     }
 
 }

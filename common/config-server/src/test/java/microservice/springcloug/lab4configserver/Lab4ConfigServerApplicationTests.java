@@ -1,4 +1,4 @@
-package microservice.springcloug.lab6wordserver;
+package microservice.springcloug.lab4configserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Lab6ServerWordApplicationTests
+public class Lab4ConfigServerApplicationTests
 {
 
     @Test
