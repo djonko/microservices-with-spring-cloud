@@ -11,6 +11,7 @@ public class Lab8ConfigServerApplication
 
     public static void main(String[] args)
     {
+
         SpringApplication.run(Lab8ConfigServerApplication.class, args);
     }
 
