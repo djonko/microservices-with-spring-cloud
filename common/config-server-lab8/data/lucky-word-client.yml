@@ -1,4 +1,4 @@
 ---
-word:
+wordConfig:
   preamble: The lucky word is
-  lucky: Irish
+  luckyWord: Irish
