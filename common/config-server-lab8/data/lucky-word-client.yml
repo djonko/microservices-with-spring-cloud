@@ -1,4 +1,4 @@
 ---
-word-config:
+word:
   preamble: The lucky word is
-  lucky-word: Irish
+  lucky: Irish
