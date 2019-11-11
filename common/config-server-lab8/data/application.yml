@@ -38,6 +38,6 @@ spring:
 words: icicle,refrigerator,blizzard,snowball
 ---
 
-word-config:
+word:
   preamble: The lucky word is
   lucky-word: Irish
