@@ -1,0 +1,7 @@
+---
+# Allow thymeleaf template changes to reload:
+spring.thymeleaf.cache: false
+#spring.application.name: zuulserver
+#zuul.routes.products.path: /services/**
+#zuul.routes.products.url: http://localhost:8080/
+#server.port: 8080

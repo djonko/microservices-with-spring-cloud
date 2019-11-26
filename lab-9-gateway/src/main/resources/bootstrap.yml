@@ -1,0 +1,6 @@
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:4045    # Expect the Spring Cloud Config server to be running on localhost, port 8001.
+      fail-fast: true               # fail on server config not found
